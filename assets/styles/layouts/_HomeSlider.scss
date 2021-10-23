@@ -1,0 +1,160 @@
+
+
+.homeSlider{
+	&-item{
+		position: relative;
+		&__img{
+			img{
+				height: 750px;
+				width: 100%;
+				object-fit: cover;
+			}
+		}
+		&__info{
+			padding: 40px 60px;
+			position: absolute;
+			top: 25%;
+			opacity: 0;
+			transition: .9s;
+			max-width: 600px;
+			background: rgba(250, 247, 242, 0.9);
+			.slider_title{
+				margin-bottom: 22px;
+				span{
+					font-family: 'Lora', serif;
+					font-style: normal;
+					font-weight: bold;
+					line-height: 35px;
+					font-size: 35px;
+					letter-spacing: 0.03em;
+					color: $bg;
+				}
+			}
+			.slider_text{
+				margin-bottom: 30px;
+				p{
+					font-family: Montserrat;
+					font-style: normal;
+					font-weight: 500;
+					line-height: 27px;
+					font-size: 16px;
+					letter-spacing: -0.02em;
+				}
+			}
+		}
+	}
+	
+}
+
+.homeSlider{
+	.slick-active{
+		.homeSlider-item__info{
+			top: 35% ;
+			opacity: 1;
+
+		}
+	}
+}
+
+.slick-control{
+	position: absolute;
+	left: 0px;
+	right: 0;
+	bottom: 20px;
+	list-style: none;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex!important;
+	
+	margin: 0;
+	justify-content: center;
+	li{
+		width: 19px;
+	    height: 19px;
+	    display: block;
+	    margin: 0 10px;
+	    border: 3px solid #BD9F61;
+		cursor: pointer;
+	    position: relative;
+	    [role=tab]{
+			display: none;
+		}
+	
+		&.slick-active{
+			position: relative;
+			background: #fff;
+		}
+	}
+}
+
+
+
+
+
+@media screen and (max-width: 39.9375em){
+	.homeSlider{
+		margin-top: 63px;
+		&-item{
+			display: -webkit-flex !important;
+			display: -moz-flex !important;
+			display: -ms-flex !important;
+			display: -o-flex !important;
+			display: flex !important;
+			flex-direction: column;
+			&__img{
+				order: 2;
+				img{
+					height: 250px;
+					// min-height: 560px;
+				}
+			}
+			&__info{
+				padding: 20px 15px;
+				top: 30%;
+				position: static;
+				background: hsl(38, 44%, 96%);
+			}
+		}
+		.slider_title{
+			margin-bottom: 10px;
+			span{
+				font-size: 23px;
+			}
+		}
+		.slider_text{
+
+			p{
+				font-size: 15px;
+				line-height: 23px;
+			}
+			
+		}
+	}
+	.homeSlider{
+		.slick-active{
+			.homeSlider-item__info{
+				top: 40% ;
+				opacity: 1;
+
+			}
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

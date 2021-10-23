@@ -1,0 +1,36 @@
+.restaurantSlider__title{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+	text-align: center;
+	.btn{
+		background: rgba(250, 247, 242, 0.9);
+		border: 3px solid $bord;
+		font-family: Lora;
+		font-style: normal;
+		// font-weight: bold;
+		line-height: 35px;
+		font-size: 25px;
+		letter-spacing: 0.03em;
+		text-transform: uppercase;
+		color: $bg;
+		padding: 20px 80px;
+		&:before,&:after{
+			display: none;
+		}
+	}
+}
+.restaurantSlider{
+	position: relative;
+}
+
+@media screen and (max-width: 39.9375em){
+	.restaurantSlider__title{
+		.btn{
+			font-size: 19px;
+			line-height: 23px;
+			padding: 10px 40px;
+		}
+	}
+}

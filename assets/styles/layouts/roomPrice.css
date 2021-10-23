@@ -1,0 +1,166 @@
+.room-price-wrap {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.room-price-wrap:after {
+  content: "";
+  width: 98%;
+  /* height: 400px; */
+  background: #FAF7F2;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.room-price-wrap table {
+  border: none;
+  max-width: 240px;
+}
+
+.room-price-wrap table thead {
+  background: none !important;
+  border: none;
+}
+
+.room-price-wrap table thead th {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  padding-left: 5px !important;
+  color: #5E4B24;
+  padding-bottom: 14px;
+}
+
+.room-price-wrap table thead th:nth-child(2n) {
+  text-align: right;
+  padding-right: 5px !important;
+}
+
+.room-price-wrap table tbody {
+  border: none;
+  background: none !important;
+}
+
+.room-price-wrap table tbody tr {
+  background: none !important;
+}
+
+.room-price-wrap table tbody tr:nth-child(2n) {
+  background: none !important;
+}
+
+.room-price-wrap table tbody tr td {
+  padding: 7px 5px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 20px;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #272521;
+}
+
+.room-price-wrap table tbody tr td:nth-child(2n) {
+  text-align: right;
+}
+
+.room-price {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.room-price .price-text {
+  margin-bottom: 40px;
+  max-width: 430px;
+}
+
+.room-price .price-text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  color: #BD9F61;
+}
+
+.room-price__price {
+  padding-left: 85px;
+}
+
+.room-price__title {
+  margin-bottom: 40px;
+  padding-left: 15px;
+  padding-right: 2%;
+}
+
+.room-price__text p {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 28px;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  max-width: 515px;
+  color: #272521;
+}
+
+@media screen and (max-width: 39.9375em) {
+  .room-price__price {
+    padding: 0 15px;
+    margin-bottom: 20px;
+  }
+  .room-price__price .minimalistBlack {
+    margin: 0 auto;
+  }
+  .room-price-wrap {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .price-text {
+    margin-top: 20px;
+  }
+  .room-price {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .room-price__title {
+    margin-bottom: 10px;
+  }
+  .room-price__btn {
+    text-align: center;
+  }
+  table thead th {
+    font-size: 16px;
+  }
+  table tbody {
+    border: none;
+  }
+  table tbody tr {
+    /* background: none !important; */
+  }
+  table tbody tr:nth-child(2n) {
+    background: #faf7f2 !important;
+  }
+  table tbody tr td {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+  .room-price__price {
+    margin-bottom: 20px;
+  }
+  .room-price__text p {
+    max-width: 600px;
+  }
+}
+/*# sourceMappingURL=roomPrice.css.map */

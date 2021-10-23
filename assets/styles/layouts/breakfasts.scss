@@ -1,0 +1,100 @@
+.breakfasts{
+	margin-bottom: 115px;
+	&__title{
+		margin-bottom: 60px;
+	}
+	&__img{
+		img{
+			border: 5px solid $bord-img;
+			height: 370px;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__info{
+		padding-left: 50px;
+		.breakfasts-title{
+			margin-bottom: 30px;
+			span{
+				color: $black;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 24px;
+				font-size: 21px;
+			}
+		}
+		.breakfasts-text{
+			margin-bottom: 40px;
+			p{
+				color: $black;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 28px;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.breakfasts{
+		&__img{
+			margin-bottom: 40px;
+		}
+		&__info{
+			padding-left: 15px;
+		}
+	}
+}
+@media screen and (max-width: 39.9375em){
+	.breakfasts{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 10px;
+		&__img{
+			margin-bottom: 40px;
+			order: 3;
+			img{
+				height: 250px;
+			}
+		}
+		&__info{
+			padding-left: 15px;
+			order: 2;
+			margin-bottom: 40px;
+		}
+		&__title{
+			margin-bottom: 10px;
+		}
+		&-text{
+			margin-bottom: 20px !important;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

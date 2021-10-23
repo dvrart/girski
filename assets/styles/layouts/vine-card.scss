@@ -1,0 +1,176 @@
+.vine-card{
+	margin-bottom: 100px;
+	&__title{
+		margin-bottom: 60px;
+	}
+	&__info{
+		.vine-card-title{
+			margin-bottom: 30px;
+			span{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 24px;
+				font-size: 21px;
+				
+				color: $black;
+			}
+			
+		}
+		.vine-card-text{
+			p{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 28px;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+				color: $black;	
+			}
+			
+			margin-bottom: 60px;
+		}
+	}
+	&__foto{
+		display: flex;
+		img{
+			width: 55%;
+			height: 485px;
+			object-fit: cover;
+			border: 5px solid $bord-img;
+			&:nth-child(1){
+				margin-top: 50px;
+				z-index: 1;
+			}
+			&:nth-child(2){
+				margin-left: -10%;
+				
+			}
+		}
+	}
+}
+.spa-sauna{
+	position: relative;
+	&:after{
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: -26px;
+		left: 0;
+		height: 530px;
+		background-position: left;
+		width: 665px;
+		background-image: url(../images/spa-bg.svg);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+}
+.vine-card_spa{
+	position: relative;
+	
+	.vine-card__foto{
+		img{
+			width: 55%;
+			height: 485px;
+			object-fit: cover;
+			border: 5px solid $bord-img;
+			&:nth-child(1){
+				margin-top: 0 !important;
+				z-index: 1;
+			}
+			&:nth-child(2){
+				margin-top: 50px;
+				margin-left: -10%;
+				
+			}
+		}
+	}
+}
+
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.vine-card{
+		&__info{
+			margin-bottom: 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 39.9375em){
+	.vine-card{
+		margin-bottom: 50px;
+		&__info{
+			margin-bottom: 40px;
+		}
+		&__foto{
+			display: flex;
+			img{
+				width: 55%;
+				height: 250px;
+			}
+		}
+		&__title{
+			margin-bottom: 10px;
+		}
+		&-text{
+			margin-bottom: 20px !important;
+		}
+	}
+	.vine-card_spa{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		flex-direction: column;
+		.vine-card__foto{
+			margin-bottom: 30px;
+			order: 3;
+			img{
+				width: 55%;
+				height: 250px;
+			}
+		}
+		.vine-card__info{
+			margin-bottom: 10px !important;
+		}
+	}
+	.spa-sauna{
+		position: relative;
+		overflow: hidden;
+		&:after{
+			content: "";
+			display: block;
+			position: absolute;
+			bottom: -26px;
+			left: 0;
+			height: 270px;
+			background-position: left;
+			width: 395px;
+			background-image: url(../images/spa-bg.svg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

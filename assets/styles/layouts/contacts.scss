@@ -1,0 +1,227 @@
+#map{
+	height: 610px;
+	width: 100%;
+}
+.contactPage{
+	.reviews-wrap{
+		background: #FAF7F2;
+	}
+}
+
+
+.contactPage__image{
+	position: relative;
+	margin-bottom: 50px;
+	img{
+		height: 500px;
+		width: 100%;
+		object-fit: cover;
+	}
+	.contactPage__image-bg{
+		// background: linear-gradient(180deg, rgba(120, 109, 87, 0.3) 0%, rgba(1, 0, 0, 0.3) 100%);
+		// position: absolute;
+		// top: 0;
+		// bottom: 0;
+		// right: 0;
+		// left: 0;
+	}
+	.contactPage__title{
+		position: absolute;
+		bottom: 50px;
+		left: 0;
+		right: 0;
+		text-align: center;
+		span{
+			background: rgba(250, 247, 242, 0.9);
+			border: 3px solid $bord;
+			font-family: Lora;
+			font-style: normal;
+			line-height: 35px;
+			font-size: 25px;
+			letter-spacing: 0.03em;
+			text-transform: uppercase;
+			color: $bg;
+			padding: 20px 100px;
+			
+		}
+	}
+}
+
+
+
+.contact-map{
+	position: relative;
+	.map-info{
+		position: absolute;
+		z-index: 22;
+		background: #fff;
+		max-width: 430px;
+		top: 60px;
+		left: 15px;
+		padding: 50px;
+		margin-right: 15px;
+		&__title{
+			border-top: 10px solid $bord;
+			margin-bottom: 10px;
+			padding-top: 35px;
+			span{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 20px;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+				
+				color: #272521;
+			}
+		}
+		&__adress{
+			margin-bottom: 25px;
+			p{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 20px;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+
+				color: #272521;
+			}
+		}
+		&__contacts{
+			margin-bottom: 60px;
+			p{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 600;
+				line-height: 20px;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+				margin-bottom: 10px;
+				color: #272521;
+			}
+			ul{
+				list-style: none;
+				margin: 0;
+				li{
+					a{
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: normal;
+						line-height: 20px;
+						font-size: 16px;
+						letter-spacing: -0.02em;
+
+						color: #272521;
+					}
+				}
+			}
+			
+		}
+		&__btn{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+		}
+		&__soc{
+			a{
+				margin-left: 30px;
+			}
+		}
+	}
+}
+.map-window{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	a{
+		color: $title;
+		span{
+			font-weight: bold;
+		}
+	}
+	img{
+		width: 120px;
+	}
+}
+
+
+
+@media screen and (max-width: 39.9375em){
+	.map-info{
+		position: static !important;
+		padding-top: 0 !important;
+		padding: 15px  !important;
+		&__btn{
+			.map-info__soc{
+				order: -1;
+				margin-bottom: 20px;
+				width: 100%;
+				a{
+					margin-left: 0;
+					margin-right: 30px;
+				}
+				
+			}
+		}
+		&__contacts{
+			margin-bottom: 30px !important;
+		}
+	}
+	.contactPage__image{
+		img{
+			height: 200px;
+			
+		}
+	}
+	.contactPage__title{
+		span{
+			font-size: 19px !important;
+			line-height: 23px !important;
+			padding: 10px 50px !important;
+		}
+	}
+	#map{
+		height: 410px;
+		width: 100%;
+	}
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.contact-map{
+		.map-info{
+			max-width: 340px;
+			&__btn{
+				.map-info__soc{
+					order: -1;
+					margin-bottom: 20px;
+					a{
+						margin-left: 0;
+						margin-right: 30px;
+					}
+					
+				}
+			}
+			&__contacts{
+				margin-bottom: 30px !important;
+			}
+		}
+	}
+	
+}
+
+
+
+
+
+
+

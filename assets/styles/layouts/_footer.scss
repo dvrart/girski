@@ -1,0 +1,174 @@
+
+
+
+
+footer{
+	/* height: 200px; */
+}
+.footer{
+	padding: 15px 0px;
+	background: $bord-img;
+	color: #fff;
+	border-top: 2px solid $bord;
+	.row{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: center;
+	}
+	&__contacts{
+		.footer-addres{
+			p{
+				margin-bottom: 4px;
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: 500;
+				line-height: 22px;
+				font-size: 14px;
+				letter-spacing: -0.04em;
+				color: $wt;
+			}
+		}
+		.footer-contacts{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			align-items: center;
+			.footer-soc{
+				a{
+					margin-right: 20px;
+					display: inline-block;
+				}
+			}
+			.footer-phone{
+				ul{
+					margin: 0;
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;list-style: none;
+					flex-wrap: wrap;
+					a{
+						font-family: Montserrat;
+						font-style: normal;
+						font-weight: 500;
+						line-height: 22px;
+						font-size: 14px;
+						letter-spacing: -0.04em;
+						color: $wt;
+						/* padding: 0 5px; */
+						margin-right: 10px;
+					}
+				}
+			}
+		}
+	}
+	&__logo{
+		text-align: center;
+		padding: 0;
+		img{
+			height: 95px;
+		}
+		
+	}
+	&__copy{
+		text-align: right;
+		span{
+
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 22px;
+			font-size: 14px;
+			letter-spacing: -0.04em;
+			color: $wt;
+			&:last-child(){
+				white-space: nowrap;
+			}
+		}
+		a{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 500;
+			line-height: 22px;
+			font-size: 14px;
+			letter-spacing: -0.04em;
+			color: $wt;
+		}
+	}
+	
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.footer{
+		
+		&__contacts{
+			padding-right: 0;
+			.footer-contacts{
+				flex-direction: column;
+				align-items: flex-start;
+				.footer-phone{
+					order: -1;
+					margin-bottom: 7px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 39.9375em){
+	.footer{
+		&__logo{
+			order: -1;
+		}
+		&__contacts{
+			text-align: center;
+			margin-bottom: 20px;
+			.footer-contacts{
+				margin-top: 10px;
+				justify-content: center;
+			}
+			.footer-phone{
+				margin-bottom: 7px;
+				order: -1;
+			}
+			.footer-soc{
+				a{
+					/* margin-right: 0 ; */
+					margin: 0 15px !important;
+				}
+			}
+			.footer-contacts{
+				flex-direction: column;
+			}
+		}
+		&__copy{
+			text-align: center;
+			a{
+				display: block;
+			}
+		}
+		.row{
+			flex-direction: column;
+		}
+		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

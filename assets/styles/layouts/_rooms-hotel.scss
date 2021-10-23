@@ -1,0 +1,197 @@
+.rooms-wrap{
+	position: relative;
+	margin-bottom: 120px;
+	&:after{
+		content: '';
+		width: 600px;
+		height: 310px;
+		background-image: url(../images/room_bg.svg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		position: absolute;
+		z-index: -1;
+		bottom: 0px;
+		right: 0px;
+	}
+	.row{
+		border-bottom: 3px solid #D7C5A0;
+	}
+}
+
+
+.rooms-hotel{
+	.rooms-hotel-title{
+		margin-bottom: 30px;
+		span{
+
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: bold;
+			line-height: 24px;
+			font-size: 21px;
+
+			color: $black;
+		}
+	}
+	margin-top: 100px;
+	margin-bottom: 150px;
+	&__content{
+		padding-left: 15px;
+		max-width: 750px;
+	}
+	&__text{
+		margin-bottom: 30px;
+		p{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 28px;
+			font-size: 16px;
+			letter-spacing: -0.02em;
+			color: $black;
+		}
+	}
+	.room-items{
+		display: flex;
+		justify-content: flex-end;
+		position: relative;
+		
+	}
+	.room-item{
+		position: relative;
+		overflow: hidden;
+		margin: 0 20px;
+		min-width: 270px;
+		max-width: 330px;
+		&__class-room{
+			text-align: center;
+			color: #fff; 
+			position: absolute;
+			z-index: 5;
+			top: 0;
+			width: 100%;
+			height: 75px;
+			background: $bord-img;
+			-webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+			clip-path: polygon(50% 100%, 0 0, 100% 0);
+			padding-top: 10px;
+			span{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 20px;
+				font-size: 16px;
+				text-align: center;
+				letter-spacing: 0.07em;
+				text-transform: uppercase;
+			}
+			p{
+				font-size: 10px;
+				/* letter-spacing: 0.07em; */
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-top: -5px;
+			}
+		}
+		&__price{
+			z-index: 2; 
+			
+			text-align: center;
+			position: absolute;
+			right: 0;
+			left: 0;
+			bottom: 20px;
+			span{
+				background: $bord-img;
+				padding: 12px 50px;
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 20px;
+				font-size: 16px;
+				text-align: center;
+				letter-spacing: 0.07em;
+				text-transform: uppercase;
+				transition: .2s;
+				color: #FFFFFF;
+			}
+		}
+		&__info{
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 100%;
+			bottom: -100%;
+			text-align: center;
+			color: #fff;
+			padding: 15px;
+			padding-top: 80px;
+			background: rgba(7, 16, 29, 0.7);
+			transition: .3s;
+		}
+		&:hover{
+			.room-item__info{
+				bottom: 0%;
+				top: 0;
+			}
+			.room-item__price{
+				// z-index: 2; 
+				span{
+					background: $bord;
+				}
+			}
+		}
+	}
+}
+ 
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.room-items{
+		justify-content: flex-start !important;
+	}
+	
+	.rooms-hotel__btn{
+		margin-bottom: 30px;
+
+	}
+	
+}
+
+@media screen and (max-width: 39.9375em){
+	.room-items{
+		justify-content: center !important;
+		flex-wrap: wrap;
+	}
+	.room-item{
+		margin: 0 !important;
+		margin-bottom: 20px !important;
+	}
+	.rooms-hotel__text{
+		p{
+			font-size: 16px;
+		}
+	}
+	.rooms-hotel__btn{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+	.rooms-wrap{
+		margin-bottom: 10px;
+		&:after{
+			width: 300px !important;
+			height: 210px !important;
+		}
+	}
+	.rooms-hotel{
+		margin-bottom: 100px;
+		margin-top: 10px;
+	}
+}
+
+
+
+
+
+
+
+

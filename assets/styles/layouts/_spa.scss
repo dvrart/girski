@@ -1,0 +1,172 @@
+.spa_wrap{
+	position: relative;
+	padding: 30px 0;
+	margin-bottom: 160px;
+	&:after{
+	    content: "";
+	    width: 80%;
+	    height: 400px;
+	    background: #f3fcff;
+	    position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    right: 0;
+	}
+}
+.SPA-wrap{
+	margin-top: 50px;
+	margin-bottom: 55px;
+	padding-top: 70px;
+	padding-bottom: 30px;
+	position: relative;
+	&:after{
+	    content: "";
+	    width: 98%;
+	    /* height: 400px; */
+	    background: #f3fcff;
+	    position: absolute;
+	    z-index: -1;
+	    top: 0;
+	    left: 0;
+	    bottom: 0;
+	}
+}
+.spa{
+	position: relative;
+
+	&__content{
+		position: relative;
+		
+	}
+	.title{
+		margin-bottom: 35px;
+	}
+	&__text{
+		margin-bottom: 25px;
+		p{
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: normal;
+			line-height: 28px;
+			font-size: 16px;
+			letter-spacing: -0.02em;
+			color: $black;
+		}
+	}
+	&-img{
+	
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		align-items: flex-end;
+		padding-top: 50px;
+	
+		img{
+			
+			
+			border: 5px solid $bord-img;
+			object-fit: cover;
+			&:nth-child(1){
+				margin-right: 15px;
+				width: 50%;
+				 align-self: start;
+				 margin-top: 60px;
+				 height: 200px;
+			}
+			&:nth-child(2){
+				margin-left: -70px;
+				width: 42%;
+				z-index: 1;
+				height: 400px;
+			}
+			&:nth-child(3){
+				margin-left: -30px;
+				width: 57%;
+				align-self: flex-end;
+				margin-bottom: 30px;
+				height: 200px;
+			}
+		}
+	}
+	
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.spa__content{
+		order: -1;
+	}
+	.spa-img{
+		img{
+			&:nth-child(1){
+				
+			}
+			&:nth-child(2){
+				
+			}
+			&:nth-child(3){
+				display: none;
+			}
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 39.9375em){
+	.spa__content{
+		order: -1;
+		.title{
+			margin-bottom: 5px !important;
+		}
+	}
+	.spa{
+		display: flex;
+    	flex-direction: column;
+    	&__text{
+    		margin-bottom: 15px !important;
+    	}
+	}
+	.spa-img{
+		padding-top: 0 !important;
+		img{
+			margin-top: 40px !important;
+			&:nth-child(1){
+				width: 100%;
+			}
+			&:nth-child(2){
+				display: none;
+			}
+			&:nth-child(3){
+				display: none;
+			}
+		}
+	}
+	.spa_wrap{
+		margin-bottom: 10px !important;
+		&:after{
+			display: none;
+		}
+	}
+	.spa__btn{
+		// text-align: center;
+	}
+	.SPA-wrap{
+		margin-top: 20px;
+		padding-top: 20px;
+		.menu-btn{
+			text-align: left !important;
+		}
+		.restaurant-menu-text{
+			margin-bottom: 20px !important;
+		}
+	}
+}
+
+
+
+
+
+
+

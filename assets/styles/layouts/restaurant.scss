@@ -1,0 +1,115 @@
+.restaurant-wrap{
+	background: #FAF7F2;
+	padding-top: 55px;
+	padding-bottom: 85px;
+	margin-bottom: 100px;
+}
+
+.restaurant{
+	&__title{
+		margin-bottom: 60px;
+	}
+	&__img{
+		img{
+			border: 5px solid $bord-img;
+			height: 380px;
+			object-fit:cover;
+			width: 100%;
+		}
+	}
+	&__info{
+		padding-top: 30px;
+		max-width: 500px;
+		.restaurant-title{
+			margin-bottom: 30px;
+			span{
+				font-family: 'Montserrat', sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				line-height: 24px;
+				font-size: 21px;
+			
+
+				color: #272521;
+			}
+		}
+		.restaurant-text{
+			margin-bottom: 50px;
+			p{
+				font-family: Montserrat;
+				font-style: normal;
+				font-weight: normal;
+				line-height: 28px;
+				font-size: 16px;
+				letter-spacing: -0.02em;
+
+				color: #272521;
+			}
+		}
+	}
+}
+
+@media screen and (min-width: 40em) and (max-width: 63.9375em){
+	.restaurant{
+		&__info{
+			max-width: 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 39.9375em){
+	.restaurant{
+		&__info{
+			max-width: 100%;
+			margin-bottom: 40px;
+			padding-top: 15px;
+		}
+		&__title{
+			margin-bottom: 0 !important;
+		}
+		&-text{
+			margin-bottom: 20px !important;
+		}
+		&__img{
+			img{
+				border: 5px solid $bord-img;
+				height: 200px;
+				object-fit:cover;
+				width: 100%;
+			}
+		}
+	}
+	.restaurant-title{
+		margin-bottom: 20px !important;
+		span{
+			font-size: 18px !important;
+		}
+	}
+	.restaurant-wrap{
+		padding-bottom: 55px !important;
+		margin-bottom: 0px !important;
+		padding-top: 40px;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
